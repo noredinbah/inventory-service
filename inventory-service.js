@@ -15,10 +15,6 @@ app.use(bodyParser.json());
 app.get('/health', (req, res) => res.status(200).send('OK'));
 
 
-
-
-
-
 // Unified inventory update endpoint
 app.post('/inventory/update', (req, res) => {
     const { itemId, quantity } = req.body;
