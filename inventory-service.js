@@ -12,7 +12,7 @@ let inventory = {
 app.use(bodyParser.json());
 
 // Health check endpoint
-app.get('/health', (req, res) => res.status(200).send('OK'));
+app.get('/health', (req, res) => res.status(200).send('OK sud'));
 
 
 // Unified inventory update endpoint
@@ -21,7 +21,7 @@ app.post('/inventory/update', (req, res) => {
 
 
 
-    
+
     console.log('Request received from Order service');
     
     if (!inventory[itemId]) {
