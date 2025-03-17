@@ -9,7 +9,6 @@ let inventory = {
   'item1': { name: 'Item 1', quantity: 10 },
   'item2': { name: 'Item 2', quantity: 5 }
 };
-
 app.use(bodyParser.json());
 
 // Health check endpoint
