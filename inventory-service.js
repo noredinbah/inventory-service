@@ -19,6 +19,9 @@ app.get('/health', (req, res) => res.status(200).send('OK'));
 app.post('/inventory/update', (req, res) => {
     const { itemId, quantity } = req.body;
 
+
+
+    
     console.log('Request received from Order service');
     
     if (!inventory[itemId]) {
